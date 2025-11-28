@@ -7,7 +7,7 @@ This project was developed as part of the **Samsung Innovation Campus – AI Tra
 
 ## ⭐ Project Highlights
 
-- 🎯 **97.2% model accuracy** on validation data  
+- 🎯 **97.8% model accuracy** on validation data  
 - 🧠 Detects **4 tumor types**:
   - Glioma  
   - Meningioma  
