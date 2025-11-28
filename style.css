@@ -1,0 +1,64 @@
+/* Hide the real uploader visually, but keep it on top and clickable */
+.stFileUploader input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0 !important;
+    cursor: pointer;
+}
+
+/* Custom upload box */
+.custom-upload-box {
+    border: 2px dashed #2dd4bf;
+    background-color: #0f172a;
+    border-radius: 14px;
+    padding: 28px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s ease;
+    position: relative;
+}
+
+.custom-upload-box:hover {
+    border-color: #22d3ee;
+    background-color: #0c1324;
+}
+
+.custom-upload-icon {
+    font-size: 42px;
+    color: #2dd4bf;
+    margin-bottom: 8px;
+}
+
+.custom-upload-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.custom-upload-types {
+    font-size: 13px;
+    color: #94a3b8;
+}
+
+.custom-upload-max {
+    font-size: 12px;
+    color: #64748b;
+}
+/* Remplacer le texte "Limit 200MB per file • JPG, JPEG, PNG" par deux lignes */
+div[data-testid="stFileUploader"] div:nth-of-type(2) > span:before {
+    content: "Limit 200MB per file\nFormats: JPG, JPEG, PNG";
+    white-space: pre-wrap !important;
+    font-size: 13px !important;
+    color: #64748b !important;
+}
+
+/* Cacher le texte original */
+div[data-testid="stFileUploader"] div:nth-of-type(2) > span > span {
+    display: none !important;
+}
+
+
+
